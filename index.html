@@ -9,7 +9,7 @@
     document.getElementById('startLat').innerHTML = startPos.coords.latitude;
     document.getElementById('startLon').innerHTML = startPos.coords.longitude;
   };
-  navigator.geolocation.getCurrentPosition(geoSuccess);
+  navigator.geolocation.watchPosition(geoSuccess);
 };
 </script>
     <style>
